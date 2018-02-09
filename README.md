@@ -28,7 +28,7 @@ We directly use implementations of AES-128 included in IPPCP (Cryptography for I
   + two parameters can be defined manually during compiling:
      * `nmin`: the minimum value of <MATH>n</MATH> (default 12)
      * `nmax`: the maximum value of <MATH>n</MATH> (default 32)
-  + two parameters must be defined in the source file [declares.h]()
+  + two parameters must be defined in the source file [declares.h](https://github.com/FreeDisciplina/CollisionOffset/blob/master/declares.h)
      * `t`: the binary logarithm of the number of evaluated chains
      * `s`: the binary logarithm of the length of evaluated chains
   + example:

@@ -41,11 +41,9 @@ As pointed out by authors in [DL16](https://hal.inria.fr/hal-01407953/document),
 
 The following figures show examples of the decrease on the number of collisions with the increase of offsets (results obtained in Case 1, plotted using [matplotlib](https://matplotlib.org/)):
 
-<img src="results_t+2s_greater_n/n16_t12_s4_collisions.png" width="420"/>
-<img src="results_t+2s_greater_n/n24_t17_s6_collisions.png" width="420"/>
+<img src="results_t+2s_greater_n/n16_t12_s4_collisions.png" width="450"/> <img src="results_t+2s_greater_n/n24_t17_s6_collisions.png" width="450"/>
 
-<img src="results_t+2s_greater_n/n29_t20_s8_collisions.png" width="420"/>
-<img src="results_t+2s_greater_n/n32_t22_s8_collisions.png" width="420"/>
+<img src="results_t+2s_greater_n/n29_t20_s8_collisions.png" width="450"/> <img src="results_t+2s_greater_n/n32_t22_s8_collisions.png" width="450"/>
 
 ## References ##
 [DL16] Itai Dinur and Gaëtan Leurent. Improved Generic Attacks Against Hash-Based MACs and HAIFA. Algorithmica, November 2016. https://hal.inria.fr/hal-01407953/document

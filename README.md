@@ -12,6 +12,7 @@ We simulate the <MATH>n</MATH>-bit random mapping <MATH>f</MATH> using chopped A
 - Case 2: <MATH>t + 2s < n</MATH>, in particular
   + \#define s ((n + 7) / 8)
   + \#define t ((n + 2) / 3)  
+  (in this particular case, no collisions is found because it requires <MATH>2t + s >= n</MATH> to find the same-offset collision)
 - Case 3: <MATH>t + 2s</MATH> slightly larger or less than <MATH>n</MATH>, in particular
   + \#define s ((n + 7) / 8)
   + \#define t (5 * s)
@@ -39,10 +40,15 @@ We directly use implementations of AES-128 included in IPPCP (Cryptography for I
 
 As pointed out by authors in [DL16](https://hal.inria.fr/hal-01407953/document), when <MATH>t + 2s <= n</MATH>, each evaluated chain is not expected to collide with more than one different chain. In this case, the collision offset is roughly uniformly distributed in the interval <MATH>[0, 2<sup>s]</MATH>. On the other hand, when <MATH>t + 2s > n</MATH>, there is an obvious decrease on the number of collisions with the increase of offsets. Note that, there is a more obvious decrease on the number of images with the increase of offsets (due to the entropy loss phenomenon).
 
-The following figures show examples of the decrease on the number of collisions with the increase of offsets (results obtained in Case 1, plotted using [matplotlib](https://matplotlib.org/)):
+The following figures show examples of the results obtained in Case 1: <MATH>t + 2s > n</MATH>, from which we can see the obvious decrease on the number of collisions with the increase of offsets when <MATH>t + 2s</MATH> is larger than <MATH>n</MATH> (plotted using [matplotlib](https://matplotlib.org/)):
 
 <img src="results_t+2s_greater_n/n16_t12_s4_collisions.png" width="420"/> <img src="results_t+2s_greater_n/n24_t17_s6_collisions.png" width="420"/>
 <img src="results_t+2s_greater_n/n29_t20_s8_collisions.png" width="420"/> <img src="results_t+2s_greater_n/n32_t22_s8_collisions.png" width="420"/>
+  
+The following figures show examples of the results obtained in Case 3: <MATH>t + 2s</MATH> slightly larger or less than <MATH>n</MATH>), from which we can see the decrease (resp. roughly uniformly distribution) of the number of collisions with the increase of offsets when <MATH>t + 2s</MATH> is slightly larger than (resp. less than) <MATH>n</MATH> (plotted using [matplotlib](https://matplotlib.org/)):
+
+<img src="results_t+2s_slight_greater_less_n/n26_t20_s4_collisions.png" width="280"/> <img src="results_t+2s_slight_greater_less_n/n27_t20_s4_collisions.png" width="280"/><img src="results_t+2s_slight_greater_less_n/n28_t20_s4_collisions.png" width="280"/>
+<img src="results_t+2s_slight_greater_less_n/n29_t20_s4_collisions.png" width="280"/> <img src="results_t+2s_slight_greater_less_n/n30_t20_s4_collisions.png" width="280"/><img src="results_t+2s_slight_greater_less_n/n31_t20_s4_collisions.png" width="280"/>
 
 ## References ##
 [DL16] Itai Dinur and Gaëtan Leurent. Improved Generic Attacks Against Hash-Based MACs and HAIFA. Algorithmica, November 2016. https://hal.inria.fr/hal-01407953/document

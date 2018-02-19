@@ -45,7 +45,7 @@ The following figures show examples of the results obtained in Case 1: <MATH>t +
 <img src="results_t+2s_greater_n/n16_t12_s4_collisions.png" width="420"/> <img src="results_t+2s_greater_n/n24_t17_s6_collisions.png" width="420"/>
 <img src="results_t+2s_greater_n/n29_t20_s8_collisions.png" width="420"/> <img src="results_t+2s_greater_n/n32_t22_s8_collisions.png" width="420"/>
   
-The following figures show examples of the results obtained in Case 3: <MATH>t + 2s</MATH> slightly larger or less than <MATH>n</MATH>), from which we can see the decrease (resp. roughly uniformly distribution) of the number of collisions with the increase of offsets when <MATH>t + 2s</MATH> is slightly larger than (resp. less than) <MATH>n</MATH> (plotted using [matplotlib](https://matplotlib.org/)):
+The following figures show examples of the results obtained in Case 3: <MATH>t + 2s</MATH> slightly larger or less than <MATH>n</MATH>, from which we can see the decrease (resp. roughly uniformly distribution) of the number of collisions with the increase of offsets when <MATH>t + 2s</MATH> is slightly larger than (resp. less than) <MATH>n</MATH> (plotted using [matplotlib](https://matplotlib.org/)):
 
 <img src="results_t+2s_slight_greater_less_n/n26_t20_s4_collisions.png" width="280"/> <img src="results_t+2s_slight_greater_less_n/n27_t20_s4_collisions.png" width="280"/><img src="results_t+2s_slight_greater_less_n/n28_t20_s4_collisions.png" width="280"/>
 <img src="results_t+2s_slight_greater_less_n/n29_t20_s4_collisions.png" width="280"/> <img src="results_t+2s_slight_greater_less_n/n30_t20_s4_collisions.png" width="280"/><img src="results_t+2s_slight_greater_less_n/n31_t20_s4_collisions.png" width="280"/>

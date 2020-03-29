@@ -52,3 +52,4 @@ The following figures show examples of the results obtained in Case 3: <MATH>t +
 
 ## References ##
 [DL16] Itai Dinur and Gaëtan Leurent. Improved Generic Attacks Against Hash-Based MACs and HAIFA. Algorithmica, November 2016. https://hal.inria.fr/hal-01407953/document
+[BGW18] Zhenzhen Bao, Jian Guo, and Lei Wang. Functional Graphs and Their Applications in Generic Attacks on Iterated Hash Constructions. IACR Trans. Symmetric Cryptol. 2018(1): 201-253 (2018). https://eprint.iacr.org/2018/374.pdf
